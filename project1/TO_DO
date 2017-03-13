@@ -1,0 +1,30 @@
+To Do:
+
+Fix goalie animation
+fix ball animation
+
+Scroll text across screen after each shot
+"GOOOAL" or "MISS"
+
+Change goalie sprite
+  add goalie sprites for each team
+
+add tournament function, win 4 games in a row to win the world cup
+
+Add play defense function.
+  works the same as shot, but you control the goalie
+
+set game to move with background
+
+create more shooting areas
+
+change shooting functionality to create power/accuracy based on when you click and how long you hold the click
+    if this happens, create basketball game
+
+clean up code
+  one page with all the functions
+  one page with all the calls
+
+click to start next round instead of setTimeout
+
+set shooting zones to be in div of 'goal'. use % to set zone sizes
