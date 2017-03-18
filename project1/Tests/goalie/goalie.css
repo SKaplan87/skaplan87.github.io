@@ -1,0 +1,113 @@
+body, html {
+background:green;
+}
+
+.goalie{
+  left:218px;
+  top:64px;
+  position: absolute;
+  background-image: url(../../tmnt.png);
+  background-position: -73px -931px;
+  zoom:2.5;
+  width: 68px;
+  height: 62px;
+}
+
+#goalie1{
+  position: absolute;
+  background-position: -603px -1946px;
+  width: 97px;
+  height: 50px;
+  animation: goalie1 .5s linear 1 forwards;
+}
+@keyframes goalie1{
+  100% {transform: translateX(-70px) translateY(0px);}
+}
+
+#goalie2{
+  background-position: -156px -1334px;
+  width: 46px;
+  height: 63px;
+  animation: goalie2 .5s linear 1 forwards;
+}
+@keyframes goalie2{
+  100% {transform: translateX(-5px) translateY(-5px);}
+}
+#goalie3{
+  background-position: -450px -1015px;
+  width: 88px;
+  height: 50px;
+  animation: goalie3 .5s linear 1 forwards;
+}
+@keyframes goalie3{
+  100% {transform: translateX(50px) translateY(0px);}
+}
+#goalie4{
+  background-position: -230px -997px;
+  width: 58px;
+  height: 67px;
+  animation: goalie4 .5s linear 1 forwards;
+}
+@keyframes goalie4{
+  100% {transform: translateX(-75px) translateY(-22px);}
+}
+#goalie5{
+  background-position: -286px -1199px;
+  width: 40px;
+  height: 67px;
+  animation: goalie5 .5s linear 1 forwards;
+}
+@keyframes goalie5{
+  100% {transform: translateX(0px) translateY(-15px);}
+}
+#goalie6{
+  background-position: -287px -997px;
+  width: 58px;
+  height: 67px;
+  animation: goalie6 .5s linear 1 forwards;
+}
+@keyframes goalie6{
+  100% {transform: translateX(80px) translateY(-22px);}
+}
+#goalie7{
+  background-position: -184px -1136px;
+  width: 64px;
+  height: 57px;
+  animation: goalie7 .5s linear 1 forwards;
+}@keyframes goalie7{
+  100% {transform: translateX(-80px) translateY(-40px);}
+}
+#goalie8{
+  background-position: -244px -1070px;
+  width: 44px;
+  height: 70px;
+  animation: goalie8 .5s linear 1 forwards;
+}
+@keyframes goalie8{
+  100% {transform: translateX(0px) translateY(-60px);}
+}
+#goalie9{
+  background-position: -327px -1136px;
+  width: 64px;
+  height: 57px;
+  animation: goalie9 .5s linear 1 forwards;
+}@keyframes goalie9{
+  100% {transform: translateX(92px) translateY(-40px);}
+}
+
+#shootingArea{
+    position:absolute;
+    border:5px solid white;
+    height:300px;
+    width:900px;
+    left:150px;
+}
+
+#goal{
+    position:absolute;
+    border:20px solid black;
+    height:70%;
+    width:60%;
+    bottom:0%;
+    left:21%;
+}

@@ -1,0 +1,180 @@
+.ball{
+    position:absolute;
+    background:black;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    top:570px;
+    left:590px;
+}
+
+#ball3{
+    animation: ball3 1s linear 1 forwards;
+}
+@keyframes ball3 {
+  100% {transform: translateX(-200px) translateY(-350px);}
+}
+#ball4{
+    animation: ball4 1s linear 1 forwards;
+}
+@keyframes ball4 {
+  100% {transform: translateX(5px) translateY(-350px);}
+}
+#ball5{
+    animation: ball5 1s linear 1 forwards;
+}
+@keyframes ball5 {
+  100% {transform: translateX(230px) translateY(-350px);}
+}
+#ball10{
+    animation: ball10 1s linear 1 forwards;
+}
+@keyframes ball10 {
+  100% {transform: translateX(-215px) translateY(-420px);}
+}
+#ball11{
+    animation: ball11 1s linear 1 forwards;
+}
+@keyframes ball11 {
+  100% {transform: translateX(-50px) translateY(-430px);}
+}
+#ball12{
+    animation: ball12 1s linear 1 forwards;
+}
+@keyframes ball12 {
+  100% {transform: translateX(230px) translateY(-430px);}
+}
+
+#ball17{
+    animation: ball17 1s linear 1 forwards;
+}
+@keyframes ball17 {
+  100% {transform: translateX(-215px) translateY(-490px);}
+}
+#ball18{
+    animation: ball18 1s linear 1 forwards;
+}
+@keyframes ball18 {
+  100% {transform: translateX(30px) translateY(-490px);}
+}
+#ball19{
+    animation: ball19 1s linear 1 forwards;
+}
+@keyframes ball19 {
+  100% {transform: translateX(250px) translateY(-490px);}
+}
+
+.shred{
+  left:338px;
+  top:124px;
+  position: absolute;
+  background-image: url(../shreddersprite.png);
+  background-position: -324px -388px;
+  zoom:1.7;
+  width: 68px;
+  height: 95px;
+}
+
+#shred1{
+  background-position: -52px -765px;
+  width: 92px;
+  height: 64px;
+  animation: shred1 .5s linear 1 forwards;
+}
+@keyframes shred1{
+  100% {transform: translateX(-115px) translateY(-25px);}
+}
+
+#shred2{
+  background-position: -156px -1614px;
+  width: 66px;
+  height: 67px;
+  animation: shred2 .5s linear 1 forwards;
+}
+@keyframes shred2{
+  100% {transform: translateX(10px) translateY(-5px);}
+}
+#shred3{
+  background-position: -425px -765px;
+  width: 92px;
+  height: 64px;
+  animation: shred3 .5s linear 1 forwards;
+}
+@keyframes shred3{
+  100% {transform: translateX(90px) translateY(-30px);}
+}
+#shred4{
+  background-position: -94px -1510px;
+  width: 79px;
+  height: 99px;
+  animation: shred4 .5s linear 1 forwards;
+}
+@keyframes shred4{
+  100% {transform: translateX(-110px) translateY(-60px);}
+}
+#shred5{
+  background-position: -399px -1510px;
+  width: 79px;
+  height: 99px;
+  animation: shred5 .5s linear 1 forwards;
+}
+@keyframes shred5{
+  100% {transform: translateX(-50px) translateY(-70px);}
+}
+#shred6{
+  background-position: -399px -1510px;
+  width: 79px;
+  height: 99px;
+  animation: shred6 .5s linear 1 forwards;
+}
+@keyframes shred6{
+  100% {transform: translateX(90px) translateY(-70px);}
+}
+#shred7{
+  background-position: -184px -1424px;
+  width: 98px;
+  height: 87px;
+  animation: shred7 .5s linear 1 forwards;
+}
+@keyframes shred7{
+  100% {transform: translateX(-120px) translateY(-85px);}
+}
+#shred8{
+  background-position: -184px -1424px;
+  width: 98px;
+  height: 87px;
+  animation: shred8 .5s linear 1 forwards;
+}
+@keyframes shred8{
+  100% {transform: translateX(10px) translateY(-85px);}
+}
+#shred9{
+  background-position: -289px -1424px;
+  width: 98px;
+  height: 87px;
+  animation: shred9 .5s linear 1 forwards;
+}
+@keyframes shred9{
+  100% {transform: translateX(85px) translateY(-85px);}
+}
+
+
+#shootingArea{
+    position:relative;
+    /*border:5px solid white;*/
+    height:300px;
+    width:900px;
+    left:150px;
+}
+
+#goal{
+    position:absolute;
+    border:20px solid black;
+    border-bottom:none;
+    margin-bottom:20px;
+    height:70%;
+    width:60%;
+    bottom:0%;
+    left:21%;
+}
+

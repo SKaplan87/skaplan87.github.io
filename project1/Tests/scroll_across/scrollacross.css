@@ -1,0 +1,47 @@
+/*body{
+  background: black;
+  overflow: hidden;
+}
+
+#container{
+  position:absolute;
+  bottom:50%;
+  left:20%;
+  height:50em;
+  width:60%;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 35pt;
+  transform-origin: 50% 100%;
+  line-height:65px;
+}
+
+p{
+  font-family:"Helvetica","Arial",sans-serif;
+  color:yellow;
+  position:absolute;
+  animation: scrollUp 10s linear 0s infinite;
+}
+
+@keyframes scrollUp{
+  0%{top: 100%;}
+  100%{top:-500%;}
+}
+*/
+
+
+
+#message{
+  position: absolute;
+  font-size:100px;
+  top:50%;
+  left:50%;
+  width:100px;
+  height:100px;
+  animation: move-right 3s linear infinite;
+}
+
+@keyframes move-right {
+  0%{transform:translateX(-1800%);}
+  100% {transform:translateX(1000%);}
+}

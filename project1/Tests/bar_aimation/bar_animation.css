@@ -1,0 +1,44 @@
+
+#accuracybar{
+  position:absolute;
+  width: 450px;
+  height:30px;
+  bottom:300px;
+  left:400px;
+  background:darkgray;
+}
+
+#accuracybar2{
+  position:relative;
+  width: 1px;
+  height:30px;
+  background:green;
+  animation: accuracy 3s linear 1;
+}
+
+@keyframes accuracy{
+  100% {transform-origin:left;}
+  100% {transform: scaleX(450);}
+}
+
+#powerbar{
+  position:absolute;
+  width:30px;
+  height:200px;
+  right:100px;
+  top:100px;
+  background:darkgray;
+}
+
+#powerbar2{
+  position:absolute;
+  width:30px;
+  height:1px;
+  bottom:0;
+  background:green;
+  animation: power 3s linear 1;
+}
+@keyframes power {
+  100% {transform-origin:bottom;}
+  100% {transform: scaleY(200);}
+}
