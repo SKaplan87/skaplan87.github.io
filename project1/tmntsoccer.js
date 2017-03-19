@@ -1,15 +1,22 @@
-// jQuery(function() {
+jQuery(function() {
 
-    let level1 = 400;
-    let level2 = 600;
-    let level3 = 1100;
-    let level4 = 1700;
-    let level5 = 2200;
-    let level6 = 2400;
-    let level7 = 3000;
+    let level1 = 200;
+    let level2 = 400;
+    let level3 = 600;
+    let level4 = 900;
+    let level5 = 1400;
+    let level6 = 1800;
+    let level7 = 2000;
+
     let miss=[1,7,8,14,15,21,22,28,29,30,31,32,33,34,35];
     let offPost=[2,6,9,13,16,20,23,24,25,26,27];
     let onTarget=[3,4,5,10,11,12,17,18,19]
+
+    for(i=0;i<6;i++)
+    {
+      //build ads here
+    }
+
     let homePoints=$('#homepoints');
     let awayPoints=$('#awaypoints');
     let roundNum=$('#roundnum');
@@ -19,6 +26,7 @@
     let powerUp=$('<div id="powerbar2"></div>');
     let leo=$('.leo')
     let shred=$('.shred')
+
     homePoints.text("0");
     awayPoints.text("0");
     roundNum.text("1");
@@ -50,37 +58,30 @@
       accuracyUp.remove();
         if ( new Date().getTime() <= ( startAcc + level1 )  )
         {
-           // alert('level 1!');
            shotAcc=1;
         }
         else if(new Date().getTime() <= ( startAcc + level2 ))
         {
-            // alert('level 2!');
             shotAcc=2;
         }
         else if(new Date().getTime() <= ( startAcc + level3 ))
         {
-            // alert('level 3!');
             shotAcc=3;
         }
         else if(new Date().getTime() <= ( startAcc + level4 ))
         {
-            // alert('level 4!');
             shotAcc=4;
         }
         else if(new Date().getTime() <= ( startAcc + level5 ))
         {
-            // alert('level 5!');
             shotAcc=5;
         }
         else if(new Date().getTime() <= ( startAcc + level6 ))
         {
-            // alert('level 6!');
             shotAcc=6;
         }
         else
         {
-            // alert('level 7!');
             shotAcc=7;
         }
         $('#shotaccuracy').hide();
@@ -104,36 +105,30 @@
       powerUp.remove();
         if(new Date().getTime() <= ( startPow + level1 ))
         {
-            // alert('level 1!');
             shotPow=1;
         }
         else if(new Date().getTime() <= ( startPow + level2 ))
         {
-            // alert('level 2!');
             shotPow=2;
         }
         else if(new Date().getTime() <= ( startPow + level3 ))
         {
-            // alert('level 3!');
             shotPow=3;
         }
         else if(new Date().getTime() <= ( startPow + level4 ))
         {
-            // alert('level 4!');
             shotPow=4;
         }
         else
         {
-         // alert('level 5!');
           shotPow=5;
         }
 
     zone=((((shotPow-1)*7)+1)+shotAcc)-1 //calculates what zone on the accuracy/power matrix
     moveBall(zone);
-    let boo = isSaved(zone);
-    defense(zone,boo,turn);
-    console.log(boo)
-if(boo===true)
+    let bool = isSaved(zone);
+    defense(zone,bool,turn);
+if(bool===true)
 {
   if (miss.includes(zone))
   {
@@ -186,11 +181,9 @@ else
     {
       $('#messagebox').text("Its a draw! Nobody wins...")
     }
-    setTimeout(scoreReset,5000);
+    setTimeout(scoreReset,3500);
   }
-
-
-    } );
+    });
 
   function isSaved(zone)
   {
@@ -324,4 +317,4 @@ else
   ball.attr('id','ball'+zone);
 }
 
-// })
+})

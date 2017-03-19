@@ -2,6 +2,14 @@ body{
     background:green;
 }
 
+/*#whole{
+  position:absolute;
+  left:20px;
+  top:20px;
+  width:100%
+  height:100%;
+}*/
+
 @font-face {
     font-family: 'tmnt';
     src: url('fonts/tmnt.TTF');
@@ -34,6 +42,7 @@ body{
   height:100px;
   background-color:blue;
   z-index:-1;
+  opacity: .9;
 }
 
 .ad{
@@ -93,7 +102,7 @@ background-size:contain;
   height:150px;
   width:290px;
   left:920px;
-  top:460px;
+  top:525px;
   margin:0;
   padding:10px;
 }
@@ -107,7 +116,7 @@ background-size:contain;
   height:160px;
   width:300px;
   left:50px;
-  top:460px;
+  top:525px;
   margin:0;
   padding:0;
   z-index:5;
@@ -130,8 +139,9 @@ background-size:contain;
   border:3px solid white;
   color:red;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: super;
   font-size: 100px;
+  /*padding-bottom: 10px*/
 }
 
 #awaypoints{
@@ -175,7 +185,7 @@ background-size:contain;
   width: 1px;
   height:30px;
   background:red;
-  animation: accuracy 3s linear 1;
+  animation: accuracy 1.5s linear 1;
 }
 
 @keyframes accuracy{
@@ -200,7 +210,7 @@ background-size:contain;
   height:1px;
   bottom:0;
   background:red;
-  animation: power 3s linear 1;
+  animation: power .5s linear 1;
 }
 @keyframes power {
   0% {transform-origin:bottom;}
@@ -267,23 +277,22 @@ background-size:contain;
 }
 
 #penaltyspot{
-  font-size:120px;
+  font-family:sans-serif;
+  font-size:95px;
   color:white;
   position:absolute;
-  top:518px;
-  left:592px;
+  top:536px;
+  left:596px;
   z-index:-1;
 }
 
 #characters{
   position:absolute;
-  top:55px;
+  top:0px;
   left:30px;
   z-index:-2;
+  opacity: .8;
 }
-
-
-
 
 #ball1{
     animation: ball1 1s linear 1 forwards;
@@ -513,7 +522,7 @@ background-size:contain;
   background-position: -603px -1946px;
   width: 97px;
   height: 50px;
-  animation: leo1 .5s linear 1 forwards;
+  animation: leo1 .65s linear 1 forwards;
 }
 @keyframes leo1{
   100% {transform: translateX(-75px) translateY(0px);}
@@ -523,7 +532,7 @@ background-size:contain;
   background-position: -156px -1334px;
   width: 46px;
   height: 63px;
-  animation: leo2 .5s linear 1 forwards;
+  animation: leo2 .65s linear 1 forwards;
 }
 @keyframes leo2{
   100% {transform: translateX(20px) translateY(-5px);}
@@ -532,7 +541,7 @@ background-size:contain;
   background-position: -450px -1015px;
   width: 88px;
   height: 50px;
-  animation: leo3 .5s linear 1 forwards;
+  animation: leo3 .65s linear 1 forwards;
 }
 @keyframes leo3{
   100% {transform: translateX(50px) translateY(0px);}
@@ -541,7 +550,7 @@ background-size:contain;
   background-position: -230px -997px;
   width: 58px;
   height: 67px;
-  animation: leo4 .5s linear 1 forwards;
+  animation: leo4 .65s linear 1 forwards;
 }
 @keyframes leo4{
   100% {transform: translateX(-65px) translateY(-25px);}
@@ -550,7 +559,7 @@ background-size:contain;
   background-position: -286px -1199px;
   width: 40px;
   height: 67px;
-  animation: leo5 .5s linear 1 forwards;
+  animation: leo5 .65s linear 1 forwards;
 }
 @keyframes leo5{
   100% {transform: translateX(-10px) translateY(-15px);}
@@ -559,7 +568,7 @@ background-size:contain;
   background-position: -287px -997px;
   width: 58px;
   height: 67px;
-  animation: leo6 .5s linear 1 forwards;
+  animation: leo6 .65s linear 1 forwards;
 }
 @keyframes leo6{
   100% {transform: translateX(80px) translateY(-24px);}
@@ -568,7 +577,7 @@ background-size:contain;
   background-position: -184px -1136px;
   width: 64px;
   height: 57px;
-  animation: leo7 .5s linear 1 forwards;
+  animation: leo7 .65s linear 1 forwards;
 }@keyframes leo7{
   100% {transform: translateX(-80px) translateY(-50px);}
 }
@@ -576,7 +585,7 @@ background-size:contain;
   background-position: -244px -1070px;
   width: 44px;
   height: 70px;
-  animation: leo8 .5s linear 1 forwards;
+  animation: leo8 .65s linear 1 forwards;
 }
 @keyframes leo8{
   100% {transform: translateX(20px) translateY(-60px);}
@@ -585,7 +594,7 @@ background-size:contain;
   background-position: -327px -1136px;
   width: 64px;
   height: 57px;
-  animation: leo9 .5s linear 1 forwards;
+  animation: leo9 .65s linear 1 forwards;
 }@keyframes leo9{
   100% {transform: translateX(100px) translateY(-65px);}
 }
@@ -605,7 +614,7 @@ background-size:contain;
   background-position: -52px -765px;
   width: 92px;
   height: 64px;
-  animation: shred1 .5s linear 1 forwards;
+  animation: shred1 .65s linear 1 forwards;
 }
 @keyframes shred1{
   100% {transform: translateX(-115px) translateY(-1px);}
@@ -615,7 +624,7 @@ background-size:contain;
   background-position: -156px -1614px;
   width: 66px;
   height: 67px;
-  animation: shred2 .5s linear 1 forwards;
+  animation: shred2 .65s linear 1 forwards;
 }
 @keyframes shred2{
   100% {transform: translateX(10px) translateY(19px);}
@@ -624,7 +633,7 @@ background-size:contain;
   background-position: -425px -765px;
   width: 92px;
   height: 64px;
-  animation: shred3 .5s linear 1 forwards;
+  animation: shred3 .65s linear 1 forwards;
 }
 @keyframes shred3{
   100% {transform: translateX(90px) translateY(-6px);}
@@ -633,7 +642,7 @@ background-size:contain;
   background-position: -94px -1510px;
   width: 79px;
   height: 99px;
-  animation: shred4 .5s linear 1 forwards;
+  animation: shred4 .65s linear 1 forwards;
 }
 @keyframes shred4{
   100% {transform: translateX(-110px) translateY(-36px);}
@@ -642,7 +651,7 @@ background-size:contain;
   background-position: -399px -1510px;
   width: 79px;
   height: 99px;
-  animation: shred5 .5s linear 1 forwards;
+  animation: shred5 .65s linear 1 forwards;
 }
 @keyframes shred5{
   100% {transform: translateX(-50px) translateY(-46px);}
@@ -651,7 +660,7 @@ background-size:contain;
   background-position: -399px -1510px;
   width: 79px;
   height: 99px;
-  animation: shred6 .5s linear 1 forwards;
+  animation: shred6 .65s linear 1 forwards;
 }
 @keyframes shred6{
   100% {transform: translateX(90px) translateY(-46px);}
@@ -660,7 +669,7 @@ background-size:contain;
   background-position: -184px -1424px;
   width: 98px;
   height: 87px;
-  animation: shred7 .5s linear 1 forwards;
+  animation: shred7 .65s linear 1 forwards;
 }
 @keyframes shred7{
   100% {transform: translateX(-120px) translateY(-61px);}
@@ -669,7 +678,7 @@ background-size:contain;
   background-position: -184px -1424px;
   width: 98px;
   height: 87px;
-  animation: shred8 .5s linear 1 forwards;
+  animation: shred8 .65s linear 1 forwards;
 }
 @keyframes shred8{
   100% {transform: translateX(10px) translateY(-61px);}
@@ -678,7 +687,7 @@ background-size:contain;
   background-position: -289px -1424px;
   width: 98px;
   height: 87px;
-  animation: shred9 .5s linear 1 forwards;
+  animation: shred9 .65s linear 1 forwards;
 }
 @keyframes shred9{
   100% {transform: translateX(85px) translateY(-61px);}
