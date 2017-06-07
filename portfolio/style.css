@@ -1,0 +1,71 @@
+body{
+  text-align: center;
+}
+
+ul{
+  align-self:center;
+  font-size:130%;
+}
+
+p{
+  font-size: 200%;
+}
+
+.container {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.container div {
+    width:100%;
+}
+
+.content {
+    display: none;
+    padding : 5px;
+    background-color:white;
+}
+
+.right{
+  width:50%;
+  float:right;
+  display:inline;
+  height:50%;
+}
+
+.left{
+  width:50%;
+  float:left;
+  display:inline;
+}
+
+.title{
+  background-color: gray;
+  font-size: 200%
+}
+
+
+#about img{
+  height:20px%;
+}
+
+#headshot{
+  height:90%;
+  width:auto;
+  padding-top:10%;
+}
+
+.social{
+  height:8%;
+  width:8%;
+}
+
+.builtWith{
+  height:3%;
+}
+
+.footer{
+  height:3%;
+  clear:both;
+  font-size:150%;
+}
+
